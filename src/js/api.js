@@ -2,7 +2,7 @@ import axios from "axios";
 import Notiflix from "notiflix";
 
 
-export async function getPhoto(input, page = 1) {
+export async function getPhoto(input, page) {
     const BASE_URL = 'https://pixabay.com/api/?';
     const API_KEY = '41182605-b5a57d702bdc50fdff12e1c79'
 
