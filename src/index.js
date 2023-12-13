@@ -83,7 +83,7 @@ window.scrollBy({
   
   function onLoadMore() {
     page +=1;
-    getPhoto(`${input.value}`)
+    getPhoto(input.value, page)
     .then(response =>{
       console.log(response);
       gallery.insertAdjacentHTML('beforeend', createMarkup(response.hits));
